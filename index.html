@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>title</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+
+</head>
+<body>
+    <section class="product-page">
+        <div class="product-details">
+
+            <div class="product-img">
+
+                <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="img 1.webp">
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="img 2.webp">
+                        
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="img 3.webp">
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="img 4.webp">
+                        </div>
+                        
+                </div>
+
+
+                <div class="slider-btns">
+
+                    
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+
+
+                </div>
+                </div>
+                <div class="img-social-bar">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    
+                </div>
+
+            </div>
+
+            <div class="product-text">
+                <span class="product-category">Women Clothes and dress</span>
+                <h3>Luméa Women Clothes</h3>
+
+                <span class="product-price">Rs1750</span>
+
+                <p>Strapless short dress with gathered design detail and a pencil-shaped hem. Features long sleeves and falls above the knees.</p>
+            
+                <div class="product-size-container">
+                    <strong>Select Size:-</strong>
+
+                    <div class="product-size">
+                        <input type="checkbox" class="s-checkbox" id="s-xl">
+                        <label for="s-xl" class="s-label">XL</label>
+
+                        <input type="checkbox" class="s-checkbox" id="s-m">
+                        <label for="s-m" class="s-label">M</label>
+
+                        <input type="checkbox" class="s-checkbox" id="s-s">
+                        <label for="s-s" class="s-label">S</label>
+
+                        <input type="checkbox" class="s-checkbox" id="s-l">
+                        <label for="s-l" class="s-label">L</label>
+
+                    </div>
+                </div>
+
+                <div class="product-buttons">
+                    <a href="#" class="bag-btn">Add To Bag</a>
+                    <a href="#" class="wishlist-btn">Add To Wishlist</a>
+                </div>
+
+                <a href="'#" class="help-btn">Need Any Help?</a>
+
+
+            
+            
+            
+            </div>
+
+                
+                    
+                
+            
+            
+
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script type="text/javascript">
+        $('.s-checkbox').on('change',function(){
+            $('.s-checkbox').not(this).prop('checked',false);
+        });
+
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                450: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                820: {
+                    slidesPerView: 1,
+                    spaceBetween: 0,
+                },
+                1024: {
+                    slidesPerView: 2,
+                    spaceBetween: 0,
+                },
+            },
+        });
+    </script>
+</body>
+</html>
